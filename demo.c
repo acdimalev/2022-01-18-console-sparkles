@@ -1,6 +1,6 @@
 #include <fcntl.h>
 #include <stdint.h>
-#include <stdio.h>
+// #include <stdio.h>
 #include <sys/ioctl.h>
 #include <termios.h>
 #include <time.h>
@@ -59,7 +59,6 @@ int main(int argc, char **argv)
           , y = s[5] - 32
           ;
           path[path_n++] = (struct position){x, y};
-          printf("%d %d %d\r\n", b, x, y);
         }
       }
       for (char *s = buf; s < buf + n; s++)
